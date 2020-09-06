@@ -1,1 +1,18 @@
-<p>core works!</p>
+<div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+  
+  <!-- header -->
+  <app-core-header></app-core-header>
+
+  <div class="app-main">
+    <!-- sidebar -->
+    <app-core-sidebar></app-core-sidebar>
+    <div class="app-main__outer">
+      <!-- active route of core module -->
+      <router-outlet></router-outlet>
+
+      <!-- footer -->
+      <app-core-footer></app-core-footer>
+    </div>
+  </div>
+</div>
+<div class="app-drawer-overlay d-none animated fadeIn"></div>
